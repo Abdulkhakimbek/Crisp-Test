@@ -1,0 +1,170 @@
+/* Global */
+@import url("../assets/fonts/fonts.css");
+
+*::-webkit-scrollbar {
+  background-color: #fff;
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: RadionB;
+  font-weight: 500;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gap120 {
+  display: flex;
+  gap: 120px;
+}
+
+.gap98 {
+  display: flex;
+  gap: 98px;
+}
+
+.gap40 {
+  display: flex;
+  gap: 40px;
+}
+
+.gap15 {
+  display: flex;
+  gap: 15px;
+}
+
+.hr_padding40 {
+  padding: 0 40px;
+}
+
+.bottomPadding80 {
+  padding-bottom: 80px;
+}
+
+/* Text */
+h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #292C35;
+  z-index: 50;
+}
+
+h4 {
+  font-weight: 400;
+font-size: 30px;
+line-height: 120%;
+letter-spacing: -0.02em;
+color: #292C35;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #292C35;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #22425A;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+/* Button */
+button {
+  border: none;
+  cursor: pointer;
+}
+.btn {
+  color: #FFFFFF;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+
+.primaryBtn{
+  background: #FF7144;
+  border-radius: 27px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.secondaryBtn {
+  background: #22425A;
+  border-radius: 48px;
+  padding: 7px 20px 10px;
+}
+
+/* Image */
+img {
+  object-fit: cover;
+}
+
+
+@media (max-width:1200px) {
+  .hr_padding40 {
+    padding: 0 20px;
+  }
+}
+
