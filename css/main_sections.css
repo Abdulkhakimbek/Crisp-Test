@@ -8,126 +8,10 @@
 }
 
 /* Service Info Section */
-.service-info {
-  padding: 67px 35px 10px 40px;
-}
 
-.service-info-card {
-  position: relative;
-  height: 271px;
-  width: 271px;
-  background: #FAFAFA;
-  mix-blend-mode: normal;
-  border-radius: 30px;
-  margin: 0 3px;
-  display: flex;
-  justify-content: center;
-}
-
-.card-img-holder {
-  position: relative;
-  top: 32px;
-}
-
-.subtract-green,
-.subtract-blue,
-.subtract-pummba {
-  position: absolute;
-  opacity: 0.7;
-}
-.subtract-green {
- top: 62px;
- left: 85px;
-}
-.subtract-blue {
-  bottom: 203px;
-  left: 97px;
-}
-.subtract-pummba {
-  top: 8px;
-  left: 92px;
-  opacity: 1;
-}
-
-.service-info-card h6 {
-  position: absolute;
-  bottom: 65px;
-}
-
-.service-info-card p {
-  position: absolute;
-  top: 212px;
-  font-size: 14px;
-  color: #292C35;
-  opacity: 0.7;
-}
-
-.animation-holder {
-  position: relative;
-  margin-top: 35px;
-}
-
-.animation-holder img{
-  width: 100%;
-  height: calc(100vh - 200px);
-  background: linear-gradient(0deg, rgba(59, 83, 111, 0.1), rgba(59, 83, 111, 0.1));
-  border-radius: 6px;
-}
-
-.white-subtract-holder {
-  position: absolute;
-  top: -70px;
-  left: 46%;
-  z-index: 25;
-}
-
-.white-subtract-holder img {
-  width: 135px;
-  height: 135px;
-  background: transparent;
-}
 
 /* Product Review Section */
-.product-review {
-  padding: 71 25px;
-}
 
-.color-swatches-holder {
-  padding: 60px 0 26px 0;
-}
-
-.color-swatches {
-  background: transparent;
-}
-
-.product-img-holder {
-  width: 345px;
-  height: 345px;
-  background: url('../images/background_rectangle.svg');
-  background-repeat: no-repeat;
-  position: relative;
-  margin: 2px;
-}
-
-.product-hero-img {
-  width: 695px;
-  height: 695px;
-  background: url('../images/big_bg_rectangle.svg');
-  
-}
-
-.product-info {
-  position: absolute;
-  left: 24px;
-  bottom: 19px;
-}
-
-.product-info span{
-  background: #FFFFFF;
-  border-radius: 35px;
-  align-items: center;
-  padding: 6px 10px;
-}
 
 /* Running content */
 .running_content {
@@ -175,11 +59,30 @@
 
 /* Podcast Section */
 .podcast-section {
-  padding: 28px 159px 60px;
+  padding: 28px 150px 60px;
+}
+
+.podcast-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .podcast-section h6 {
   margin-bottom: 42px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
 }
 
 
@@ -195,7 +98,9 @@
 }
 
 @media (max-width:1200px) {
-  
+  .podcast-section {
+    padding: 28px 15px 60px;
+  }
 }
 
 @media (max-width: 1060px) {
@@ -210,6 +115,19 @@
     flex-direction: row;
    }
    .product-img-holder {
+     margin: 20px;
+   }
+   .podcast-grid img {
+    max-width: 100px;
+    object-fit: cover;
+   }
+}
+
+@media (max-width:700px) {
+  .podcast-grid {
+    justify-content: center;
+  }
+   .podcast-grid img {
      margin: 20px;
    }
 }

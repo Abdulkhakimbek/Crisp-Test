@@ -6,33 +6,34 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/main_sections.css">
+  <link rel="stylesheet" href="css/brief_info.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/product_review.css">
   <link rel="stylesheet" href="css/footer.css">
   <title>Crisp Test</title>
 </head>
 <body>
   
   <header class="header"> 
-      <div class="wrapper ">
-          <div class="flexRow space-between hr_padding40">
-              <nav class="nav-menu flexRow space-between gap30">
-                <a href="#" class="btn secondaryBtn">Shop</a>
-                <a href="#process">Our process</a>
-                <a href="#about">About</a>
-                <a href="#support">Support</a>      
-              </nav>
-              <!-- Humburger Menu-->
-              <div>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-              </div>
+      <div class="header-container">
+          <!-- hamburger-lines -->
+          <input type="checkbox" name="" id="menu-toggler" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
 
-              <div class="logo-holder">
-                <a href="/" ><img src="images\logo.svg" alt="logo"></a>
-              </div>
-              <div class="flexRow space-between gap25">
-                  <a href="/" ><img src="images/Smiley.svg" alt="logo"></a>
-                  <a href="/" ><img src="images/Handbag.svg" alt="logo"></a>
-              </div>
+          <nav class="navbar">
+            <button class="btn secondaryBtn">Shop</button>
+            <a>Our process</a>
+            <a>About</a>
+            <a>Support</a>
+          </nav>
+          <a href="/"><img class="hero-logo" src="images/logo.svg" alt="hero logo"></a>
+          <div class="header-left">
+            <button><img src="images/Smiley.svg" alt="Smiley"></button>
+            <button><img src="images/Handbag.svg" alt="Handbag"></button>
           </div>
       </div>
   </header>
@@ -53,10 +54,10 @@
       </div>
     </section>
 
-    <section class="service-info wrapper">
-      <div class="flexColumn">
-        <div class="flexRow space-between bottomPadding80">
-          <div class="flexColumn gap40 bottomPadding80">
+    <section class="brief-info">
+      <div class="brief-info-container">
+
+          <div class="brief-info-heading">
                <h4> A modern generation of sofa. 
                    <br>Lorem ipsum dolor sit amet.
                </h4>
@@ -65,8 +66,8 @@
                </div>
           </div>
 
-          <div class="flexRow">
-              <div class="service-info-card">
+          <div class="grid">
+              <div class="brief-info-card">
                   <picture class="card-img-holder">
                      <img src="images/email_man.svg" alt="">
                      <img class="subtract-green" src="images/Subtract.svg" alt="">
@@ -75,7 +76,7 @@
                   <p>El sofá en caja que cabe <br> en tu ascensor.</p>
               </div>
 
-              <div class="service-info-card ">
+              <div class="brief-info-card ">
                   <picture class="card-img-holder">
                      <img src="images/storage _ man.svg" alt="">
                      <img class="subtract-blue" src="images/Subtract_blue.svg" alt="">
@@ -84,7 +85,7 @@
                   <p>Vamos a tu casa a recogerlo. </p>
               </div>
 
-              <div class="service-info-card ">
+              <div class="brief-info-card third-item">
                   <picture class="card-img-holder">
                       <img src="images/pencil_man.svg" alt="">
                       <img class="subtract-pummba" src="images/Subtract_pummba.svg" alt="">
@@ -93,21 +94,22 @@
                   <p>No tools needed !</p>
               </div>
           </div>
-        </div>
-
-          <h2>3 módulos. Infinitas posibilidades.</h2>
- 
-         <div class="animation-holder">
-           <div class="white-subtract-holder">
-             <img class="subtract-white" src="images/Subtract_white.svg" alt="" >
-           </div>
-           <img src="images/three_modules.svg" alt="">
-         </div>
+        
       </div>
     </section>
 
+    <section class="animation">   
+        <h2>3 módulos. Infinitas posibilidades.</h2>
+        <div class="animation-holder">
+          <div class="white-subtract-holder">
+            <img class="subtract-white" src="images/Subtract_white.svg" alt="" >
+          </div>
+          <img src="images/three_modules.svg" alt="">
+        </div>
+    </section>
+
     <section class="product-review">
-      <div class="flexColumn wrapper">
+      
           <h2>Construye tu sofá perfecto. Modifícalo <br> como quieras. Empieza con...</h2>
           <div class="flexRow space-between color-swatches-holder">
               <div class="flexRow gap15 space-between">
@@ -120,16 +122,16 @@
               <div> <a href="#" class="btn primaryBtn">Compra ahora</a></div>
           </div>
 
-          <div class="product-review-container flexRow">
-              <div class="flexColumn">
-                  <div class="product-img-holder flexColumn flexCenter">
+          <div class="product-review-grid">
+              <div class="grid-item">
+                  <div class="product-img-holder ">
                       <img src="images/sofa_3.svg" alt="">
                       <div class="product-info">
                           <span>3 Seater sofa</span> 
                           <span class="opacity">Desde 2500€</span>
                       </div>
                   </div>
-                  <div class="product-img-holder flexColumn flexCenter">
+                  <div class="product-img-holder ">
                       <img src="images/sofa_small2.svg" alt="">
                       <div class="product-info">
                           <span>3 Seater sofa</span> 
@@ -137,15 +139,16 @@
                       </div>
                   </div>
               </div>
-              <div class="flexColumn">
-                <div class="product-img-holder flexColumn flexCenter">
+
+              <div class="grid-item">
+                <div class="product-img-holder">
                     <img src="images/sofa_1.svg" alt="">
                     <div class="product-info">
                         <span>3 Seater sofa</span> 
                         <span class="opacity">Desde 2500€</span>
                     </div>
                 </div>
-                <div class="product-img-holder flexColumn flexCenter">
+                <div class="product-img-holder ">
                     <img src="images/sofa_3.svg" alt="">
                     <div class="product-info">
                         <span>3 Seater sofa</span> 
@@ -153,7 +156,8 @@
                     </div>
                 </div>
               </div>
-              <div class="product-img-holder product-hero-img flexColumn flexCenter">
+
+              <div class="product-img-holder product-hero-img grid-item ">
                   <img src="images/sofa_big2.svg" alt="">
                   <div class="product-info">
                       <span>3 Seater sofa</span> 
@@ -161,7 +165,7 @@
                   </div>
               </div>
           </div> 
-    </div>
+
   </section>
 
   <section class="running_content ">
@@ -178,9 +182,9 @@
     </div>
   </section>
 
-    <section class="podcast-section flexColumn wrapper">
+    <section class="podcast-section">
         <h6>Hablan de nosotros</h6>
-        <div class="flexRow space-between">
+        <div class="podcast-grid flexRow space-between">
             <img src="images/new_york_times_logo.svg" alt="">
             <img src="images/insider_logo.svg" alt="">
             <img src="images/travel_leisure_logo.svg" alt="">
@@ -191,10 +195,10 @@
 
   </main>
 
-  <footer>
-      <div class="wrapper flexColumn">
-          <div class="flexRow space-between">
-               <div class="flexRow gap120">
+  <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-main">
+               <div class="footer-columns-holder">
                       <div class="footer-columns flexColumn gap15">
                           <p>Join our mailing list</p>
                           <div>

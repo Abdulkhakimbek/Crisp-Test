@@ -1,0 +1,116 @@
+.brief-info {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 67px 35px 10px 40px;
+}
+
+.brief-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.brief-info-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 80px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brief-info-card {
+  position: relative;
+  height: 271px;
+  width: 271px;
+  background: #FAFAFA;
+  mix-blend-mode: normal;
+  border-radius: 30px;
+  margin: 0 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.brief-info-card:hover {
+  -webkit-box-shadow: 0px 0px 31px -19px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 31px -19px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 31px -19px rgba(0,0,0,0.75);
+}
+
+
+.card-img-holder {
+  position: relative;
+  top: 32px;
+}
+
+.subtract-green,
+.subtract-blue,
+.subtract-pummba {
+  position: absolute;
+  opacity: 0.7;
+}
+.subtract-green {
+ top: 62px;
+ left: 85px;
+}
+.subtract-blue {
+  bottom: 203px;
+  left: 97px;
+}
+.subtract-pummba {
+  top: 8px;
+  left: 92px;
+  opacity: 1;
+}
+
+.brief-info-card h6 {
+  position: absolute;
+  bottom: 65px;
+}
+
+.brief-info-card p {
+  position: absolute;
+  top: 212px;
+  font-size: 14px;
+  color: #292C35;
+  opacity: 0.7;
+}
+
+@media (max-width:1320px) {
+  .brief-info-container {
+    flex-direction: column;
+    align-items: initial;
+  }
+  .brief-info-heading {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brief-info-card {
+    margin:20px;
+  }
+}
+
+@media (max-width:1000px) {
+  .brief-info {
+    padding: 67px 20px 10px 20px;
+  }
+  .brief-info-heading {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+}
+
+@media (max-width:500px) {
+  /* .brief-info {
+    padding: 67px 10px 10px 10px;
+  } */
+}

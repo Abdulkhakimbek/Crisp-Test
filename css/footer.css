@@ -1,6 +1,26 @@
 /* Footer Section */
-footer {
+.footer {
   padding: 44px 40px 20px 46px;
+}
+
+.footer-container {
+   max-width: 1440px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-columns-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
 }
 
 .footer__hero-logo img {
@@ -46,4 +66,28 @@ footer {
   letter-spacing: -0.01em;
   color: #CCC8C2;
   align-items: center;
+}
+
+@media (max-width:1000px) {
+   .footer-main {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+   }
+   .footer-columns-holder {
+    gap: 40px;
+   }
+
+}
+
+@media (max-width:600px) {
+  .footer-columns-holder {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+   }
+   .footer {
+    padding: 0px 40px 20px 20px;
+  }
 }
