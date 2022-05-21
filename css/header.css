@@ -147,10 +147,12 @@
 }
 
 @media (max-width:500px) {
+   .header-container {
+      padding: 20px;
+   }
    .hero-logo {
      width: 150px;
    }
-
    .hamburger-lines {
     height: 25px;
     width: 32px;

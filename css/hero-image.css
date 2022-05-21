@@ -1,0 +1,13 @@
+/* Hero Section */
+.hero-image-holder img{
+  width: 720px;
+  height: calc(100vh - 100px);
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 51.56%, rgba(0, 0, 0, 0.2) 100%);
+  object-fit: cover;
+}
+
+@media (max-width:1440px) {
+  .hero-image-holder img{
+    width: 50vw;
+  }
+}

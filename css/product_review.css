@@ -88,12 +88,33 @@
   }
 }
 
+@media (max-width: 1060px) {
+  .color-swatches-holder {
+    margin: 0 20px;
+  }
+  .product-review-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-review-container div{
+   flex-direction: row;
+  }
+  .product-img-holder {
+    margin: 20px;
+  }
+  .podcast-grid img {
+   max-width: 100px;
+   object-fit: cover;
+  }
+}
+
 @media (max-width:700px) {
   .color-swatches-holder {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
+    margin: 0;
   }
 
   .product-img-holder {
@@ -103,7 +124,7 @@
 
   .product-hero-img {
     max-width: calc(100vw - 20px);
-    height: 400px;
+    height: 350px;
   }
 
   .product-hero-img img {

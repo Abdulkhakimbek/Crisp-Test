@@ -1,4 +1,3 @@
-/* Global */
 @import url("../assets/fonts/fonts.css");
 
 *::-webkit-scrollbar {
@@ -36,24 +35,9 @@ body {
    margin: 0 auto;
 }
 
-.flexColumn {
-  display: flex;
-  flex-direction: column;
-}
-
 .flexRow {
   display: flex;
   flex-direction: row;
-}
-
-.flexCenter {
-  justify-content: center;
-  align-items: center;
-}
-
-.flexWrap {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .space-between {
@@ -61,42 +45,9 @@ body {
   align-items: center;
 }
 
-.gap120 {
-  display: flex;
-  gap: 120px;
-}
-
-.gap98 {
-  display: flex;
-  gap: 98px;
-}
-
-.gap40 {
-  display: flex;
-  gap: 40px;
-}
-
-.gap30 {
-  display: flex;
-  gap: 30px;
-}
-
-.gap25 {
-  display: flex;
-  gap: 25px;
-}
-
 .gap15 {
   display: flex;
   gap: 15px;
-}
-
-.hr_padding40 {
-  padding: 0 40px;
-}
-
-.bottomPadding80 {
-  padding-bottom: 80px;
 }
 
 /* Text */
@@ -112,10 +63,10 @@ h2 {
 
 h4 {
   font-weight: 400;
-font-size: 30px;
-line-height: 120%;
-letter-spacing: -0.02em;
-color: #292C35;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #292C35;
 }
 
 h6 {
@@ -134,10 +85,6 @@ a {
   line-height: 19px;
   color: #22425A;
   cursor: pointer;
-}
-
-.opacity {
-  opacity: 0.5;
 }
 
 /* Button */
@@ -162,24 +109,31 @@ button {
   border-radius: 27px;
   padding: 10px 20px;
   text-transform: uppercase;
+  border: 1px solid #FFFFFF;
+}
+
+.primaryBtn:hover {
+  background: #FFFFFF;
+  color: #FF7144;
+  border: 1px solid #FF7144;
 }
 
 .secondaryBtn {
   background: #22425A;
   border-radius: 48px;
   padding: 7px 20px 10px;
+  border: 1px solid #FFFFFF;
+}
+
+.secondaryBtn:hover {
+  background: #FFFFFF;
+  color: #22425A;
+  border: 1px solid #22425A;
 }
 
 /* Image */
 img {
   object-fit: cover;
-}
-
-
-@media (max-width:1200px) {
-  .hr_padding40 {
-    padding: 0 20px;
-  }
 }
 
 @media (max-width:1000px) {
@@ -196,23 +150,19 @@ img {
   h4 {
     font-size: 25px;
   }
-
   .btn {
     font-weight: 400;
     font-size: 14px;
     line-height: 15px;
   }
-  
   .primaryBtn{
     background: #FF7144;
     border-radius: 27px;
     padding: 10px 15px;
   }
-
 }
 
 @media (max-width:500px) {
-
   h4 {
     padding-bottom: 10px;
   }
@@ -221,7 +171,6 @@ img {
     font-size: 14px;
     line-height: 14px;
   }
-  
   .primaryBtn{
     background: #FF7144;
     border-radius: 27px;
