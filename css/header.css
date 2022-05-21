@@ -1,9 +1,9 @@
 .header {
-  width: 100%;
-  background: #FFFFFF;
   position: fixed;
+  width: 100%;
   top: 0;
-  z-index: 111;
+  background: #FFFFFF;
+  z-index: 111; 
 }
 
 .header-container {
@@ -59,14 +59,24 @@
     height: 100vh;
     max-width: 300px;
     left: -100%;
+    transition: 600ms;
     top: 60px;
     padding: 30px 100px 20px 20px;
     background: #FFFFFF;
   }
 
-  .navbar a:hover {
-    color: #4d7899;
+  .navbar a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #22425A;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
   }
+
+  .navbar a:hover:after {
+    transform: scaleX(1);
+  }
+
   .hamburger-lines {
     display: block;
   }
