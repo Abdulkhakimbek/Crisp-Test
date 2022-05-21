@@ -44,7 +44,6 @@
   box-shadow: 0px 0px 31px -19px rgba(0,0,0,0.75);
 }
 
-
 .card-img-holder {
   position: relative;
   top: 32px;
@@ -99,6 +98,15 @@
 }
 
 @media (max-width:1000px) {
+  .brief-info-two {
+    display: flex;
+  }
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .brief-info {
     padding: 67px 20px 10px 20px;
   }
