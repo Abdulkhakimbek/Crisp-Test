@@ -13,6 +13,7 @@
   height: calc(100vh - 200px);
   background: linear-gradient(0deg, rgba(59, 83, 111, 0.1), rgba(59, 83, 111, 0.1));
   border-radius: 6px;
+  object-fit: cover;
 }
 
 .white-subtract-holder {

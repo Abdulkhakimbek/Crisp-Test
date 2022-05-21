@@ -102,12 +102,12 @@
   }
 
   .product-hero-img {
-    max-width: 380px;
+    max-width: calc(100vw - 20px);
     height: 400px;
   }
 
   .product-hero-img img {
-    max-width: 330px;
+    max-width: 280px;
     height: 200px;
   }
 }
