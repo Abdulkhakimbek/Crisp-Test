@@ -1,6 +1,4 @@
 .product-review {
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 71 25px;
   display: flex;
   flex-direction: column;
